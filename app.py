@@ -9,7 +9,7 @@ model = pickle.load(open("model_crop.pkl", "rb"))
 
 @app.route("/")
 def Home():
-    return "Welcome To Crop predection Model"
+    return jsonify("Welcome to Crop prediction model")
 
 @app.route("/predict", methods = ["POST","GET"])
 def predict():
